@@ -1,0 +1,51 @@
+<html>
+<script>
+const a = [1,2,3];
+const b = [...a, 4];
+const [d, ...c] = b;
+//Only could be the last element on the left hand side.
+console.log(a+"|"+ b + "|" +c +"|"+d);
+const obj1={
+    x:1,
+    y:2,
+    z:3
+}
+const obj2={...obj1};
+const{z, ...obj3}=obj1;
+console.log(obj3);
+
+
+const obj4={
+    x:1,
+    y:2,
+    z:{
+        z1:2,
+        z2:{
+            z3:4
+        }
+    }
+}
+
+const {
+    x:xx,
+    y:yy,
+    z:{
+        z1:zz1,
+        z2:{
+            z3:zz3
+        }
+    }
+}=obj4
+console.log(xx+" "+yy+" "+zz1+" "+zz3);
+//Deconstruction
+// render(){
+//     const{
+//         label,
+//         style
+//     }=this.props
+// }
+// return (<xxx label/>)
+</script>
+</html>
+
+

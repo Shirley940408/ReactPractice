@@ -1,0 +1,22 @@
+<html>
+  <script>
+    var a = 6;
+    var a;
+    console.log("output", a); //output=6
+
+    function test(v) {
+      console.log("output2", v);
+      var v = 3;
+      console.log("output2", v);
+    //   var v=function (){
+    //     }
+    function v(){
+
+    }
+      // output=v(){}
+    }
+    test(10);
+    //程序在执行每一行的时候，都会去重新覆盖原有的值，只是undefind是没找着任何值的时候由于hosting作用显示的值，也是权限最低的
+    //当内部有方法的情况，则方法最大，因为方法为全局变量；
+  </script>
+</html>
